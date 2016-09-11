@@ -8,22 +8,24 @@
     "dev": "webpack-dashboard -- webpack-dev-server --progress --colors --inline --hot --content-base dist",
     "test": "npm test",
     "postinstall": "webpack --config ./webpack.config.js --progress --colors",
-    "start": "webpack"
+    "start": "node ./src/app.js"
   },
   "author": "jcalbinson@gmail.com",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "webpack-dashboard": "^0.1.8",
     "webpack-dev-server": "^1.15.1",
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1",
     "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.11.1",
     "css-loader": "^0.25.0",
     "json-loader": "^0.5.4",
-    "style-loader": "^0.13.1",
+    "style-loader": "^0.13.1"
+  },
+  "dependencies": {
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
     "webpack": "^1.13.2",
     "moment": "^2.14.1",
     "react-google-maps": "^4.11.0"
