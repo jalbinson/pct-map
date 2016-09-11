@@ -8,7 +8,7 @@
     "dev": "webpack-dashboard -- webpack-dev-server --progress --colors --inline --hot --content-base dist",
     "test": "npm test",
     "postinstall": "webpack --config ./webpack.config.js --progress --colors",
-    "start": "node ./src/app.js"
+    "start": "node ./src/js/app.js"
   },
   "author": "jcalbinson@gmail.com",
   "license": "ISC",
