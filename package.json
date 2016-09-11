@@ -19,12 +19,11 @@
     "json-loader": "^0.5.4",
     "style-loader": "^0.13.1",
     "webpack-dashboard": "^0.1.8",
-    "webpack-dev-server": "^1.15.1",
-    "handlebars": "^4.0.5",
-    "handlebars-loader": "^1.4.0"
+    "webpack-dev-server": "^1.15.1"
   },
   "dependencies": {
     "express": "^4.14.0",
+    "handlebars": "^4.0.5",
     "html-webpack-plugin": "^2.22.0",
     "moment": "^2.14.1",
     "react": "^15.3.1",
