@@ -1,6 +1,8 @@
 var path = require('path');
 var srcPath = path.join(__dirname, 'src');
 var buildPath = path.join(__dirname, 'dist');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var config = require('./config.json').dev;
 
 module.exports = {
     context: srcPath,
@@ -9,6 +11,12 @@ module.exports = {
         path: buildPath,
         filename: "bundle.js"
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: '!!handlebars!src/index.hbs',
+            googleApiKey: config.googleApiKey
+        })
+    ],
     module: {
         loaders: [
             {
@@ -26,6 +34,10 @@ module.exports = {
             {
                 test: /\.css$/,
                 loader: "style-loader!css-loader"
+            },
+            {
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader?limit=8192'
             }
         ]
     },

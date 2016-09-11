@@ -1,0 +1,8 @@
+{
+  "dev": {
+    "googleApiKey": "your dev api key here"
+  },
+  "prod": {
+    "googleApiKey": "your prod api key here"
+  }
+}

@@ -48,3 +48,5 @@ jspm_packages
 
 dist/bundle.js
 dist/bundle.js.map
+
+config.json
