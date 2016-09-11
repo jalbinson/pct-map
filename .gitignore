@@ -47,3 +47,4 @@ jspm_packages
 .idea
 
 dist/bundle.js
+dist/bundle.js.map
