@@ -21,11 +21,11 @@
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.2",
     "webpack-dashboard": "^0.1.8",
     "webpack-dev-server": "^1.15.1"
   },
   "dependencies": {
+    "webpack": "^1.13.2",
     "moment": "^2.14.1",
     "react-google-maps": "^4.11.0"
   }
