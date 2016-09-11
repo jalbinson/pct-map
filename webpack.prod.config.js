@@ -27,7 +27,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: '!!handlebars!src/index.hbs',
-            googleApiKey: config.googleApiKey
+            googleApiKey: process.env.GOOGLE_API_KEY
         })
     ],
 

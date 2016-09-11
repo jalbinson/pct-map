@@ -2,7 +2,6 @@ var path = require('path');
 var srcPath = path.join(__dirname, 'src');
 var buildPath = path.join(__dirname, 'dist');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var config = require('./config.json').dev;
 
 module.exports = {
     context: srcPath,
@@ -14,7 +13,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: '!!handlebars!src/index.hbs',
-            googleApiKey: config.googleApiKey
+            googleApiKey: process.env.GOOGLE_API_KEY
         })
     ],
     module: {
