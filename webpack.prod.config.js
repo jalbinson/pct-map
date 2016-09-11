@@ -1,15 +1,12 @@
 var path = require('path');
+var srcPath = path.join(__dirname, 'src');
+var buildPath = path.join(__dirname, 'dist');
 var webpack = require('webpack');
 
 module.exports = {
-    devtool: 'source-map',
-
-    entry: [
-        './src/js/client.js'
-    ],
-
+    entry: path.join(srcPath, 'js', 'client.js'),
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: buildPath,
         filename: 'bundle.js',
         publicPath: '/dist/'
     },
@@ -33,7 +30,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.js?$/,
-                exclude: /(node_modules|bower_components)/,
+                exclude: /(node_modules)/,
                 loader: 'babel',
                 query: {
                     presets: ['react', 'es2015']
