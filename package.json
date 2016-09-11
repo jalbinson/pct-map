@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "build": "webpack --config ./webpack.config.js --progress --colors",
-    "start": "webpack-dashboard -- webpack-dev-server --progress --colors --inline --hot --content-base dist",
+    "dev": "webpack-dashboard -- webpack-dev-server --progress --colors --inline --hot --content-base dist",
     "test": "npm test",
     "postinstall": "webpack --config ./webpack.config.js --progress --colors"
   },
