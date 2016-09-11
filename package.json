@@ -4,8 +4,10 @@
   "description": "A Google Maps overlay of Jenny and Justin's PCT thru hike.",
   "main": "webpack.config.js",
   "scripts": {
+    "build": "webpack --config ./webpack.config.js --progress --colors",
     "start": "webpack-dashboard -- webpack-dev-server --progress --colors --inline --hot --content-base dist",
-    "test": "npm test"
+    "test": "npm test",
+    "deploy": "gcloud app deploy"
   },
   "author": "jcalbinson@gmail.com",
   "license": "ISC",

@@ -2,7 +2,7 @@ require('../styles/main.css');
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SimpleMap from './maps/googleMaps.js';
+import SimpleMap from './maps/simpleMap.js';
 import {
     getMarkerConfig,
     getPolylineConfig
