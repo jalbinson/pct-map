@@ -7,7 +7,8 @@
     "build": "webpack --config ./webpack.config.js --progress --colors",
     "dev": "webpack-dashboard -- webpack-dev-server --progress --colors --inline --hot --content-base dist",
     "test": "npm test",
-    "postinstall": "webpack --config ./webpack.config.js --progress --colors"
+    "postinstall": "webpack --config ./webpack.config.js --progress --colors",
+    "start": "webpack"
   },
   "author": "jcalbinson@gmail.com",
   "license": "ISC",
