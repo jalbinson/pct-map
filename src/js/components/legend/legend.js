@@ -36,7 +36,7 @@ export default class Legend extends React.Component {
                         <img src={redDot} />
                     </div>
                     <div className="col-sm-11 legend-text">
-                        These markers have blog posts associated with them.
+                        Contain associated blog posts
                     </div>
                 </div>
                 <div className="row legend-row">
@@ -44,7 +44,7 @@ export default class Legend extends React.Component {
                         <img src={blueDot} />
                     </div>
                     <div className="col-sm-11 legend-text">
-                        These markers do not have blog posts associated with them.
+                        No associated blog posts
                     </div>
                 </div>
                 <div className="footer">
