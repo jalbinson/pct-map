@@ -18,9 +18,9 @@ export default class Legend extends React.Component {
                 <div className="row">
                     <div className="col-sm-12">
                         <p>
-                            Jenny and Justin's thru hike of the Pacific Crest Trail has inspired us all and I wanted to
+                            Jenny and Justin's thru-hike of the Pacific Crest Trail has inspired us all and I wanted to
                             show people just how far they actually travelled. Each marker on the map is a GPS location
-                            of a campsite they spent the night in.
+                            of a campsite they spent the night at.
                         </p>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ export default class Legend extends React.Component {
                 </div>
                 <div className="footer">
                     <div className="footer-container">
-                        Jamie Albinson - <a href="https://github.com/jalbinson/pct-map" target="_blank">github</a>
+                        Jamie Albinson - <a href="mailto:jcalbinson@gmail.com" target="_top">email</a> - <a href="https://github.com/jalbinson/pct-map" target="_blank">github</a>
                     </div>
                 </div>
             </div>
