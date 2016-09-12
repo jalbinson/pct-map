@@ -1,4 +1,6 @@
 import moment from 'moment';
+import redDot from '../../images/red-dot.png';
+import blueDot from '../../images/blue-dot.png'
 import spots from '../../resources/spots.json';
 
 function parseMoment(timestamp) {
@@ -25,16 +27,26 @@ function getSortedSpots() {
 
 export function getMarkerConfig() {
     return getSortedSpots().map((spot) => {
+        let content = `<div>${formatMoment(spot.timestamp)}</div><div>Message: ${spot.message}</div>`;
+        let icon = blueDot;
+        if (spot.blogPosts) {
+            icon = redDot;
+            spot.blogPosts.forEach((post) => {
+                content += `<div><a href="${post}" target="_blank">Link to blog post</a></div>`
+            });
+        }
+
         return {
             config: {
                 position: {
                     lat: spot.latitude,
                     lng: spot.longitude,
                 },
-                showInfo: false
+                showInfo: false,
+                icon
             },
             infoWindow: {
-                content: `<div>${formatMoment(spot.timestamp)}</div><div>Message: ${spot.message}</div>`
+                content
             }
         }
     });

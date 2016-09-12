@@ -15,9 +15,9 @@ export default class SimpleMap extends React.Component {
         this.state = {
             markers: props.markers,
             polyline: props.polyline,
-            center: { // SF
-                lat: 37.7749,
-                lng: -122.4194
+            center: {
+                lat: 41.34286,
+                lng: -122.96147
             }
         };
     }

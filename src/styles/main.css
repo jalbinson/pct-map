@@ -1,3 +1,7 @@
 body {
     margin: 0
 }
+
+.legend-row {
+    margin-top: 1em;
+}

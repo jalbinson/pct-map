@@ -1,8 +1,10 @@
-require('../styles/main.css');
+import '../styles/main.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SimpleMap from './maps/simpleMap.js';
+import SimpleMap from './components/maps/simpleMap.js';
+import Legend from './components/legend/legend.js';
 import {
     getMarkerConfig,
     getPolylineConfig
@@ -12,11 +14,18 @@ class Main extends React.Component {
 
     render() {
         return (
-            <div style={{height: '100vh'}}>
-                <SimpleMap
-                    markers={getMarkerConfig()}
-                    polyline={getPolylineConfig()}
-                />
+            <div className="row">
+                <div className="col-sm-8">
+                    <div style={{height: '100vh'}}>
+                        <SimpleMap
+                            markers={getMarkerConfig()}
+                            polyline={getPolylineConfig()}
+                        />
+                    </div>
+                </div>
+                <div className="col-sm-4">
+                    <Legend />
+                </div>
             </div>
         );
     }
