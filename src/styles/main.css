@@ -2,8 +2,17 @@ body {
     margin: 0;
 }
 
+.legend-container {
+    height: 100vh;
+    padding-right: 30px;
+}
+
 .legend-row {
-    margin-top: 1em;
+    margin: 1em 0;
+}
+
+.legend-text {
+    line-height: 32px;
 }
 
 .footer {

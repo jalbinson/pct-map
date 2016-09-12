@@ -7,7 +7,7 @@ export default class Legend extends React.Component {
 
     render() {
         return (
-            <div style={{height: '100vh'}}>
+            <div className="legend-container">
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="text-center">
@@ -35,7 +35,7 @@ export default class Legend extends React.Component {
                     <div className="col-sm-1">
                         <img src={redDot} />
                     </div>
-                    <div className="col-sm-11">
+                    <div className="col-sm-11 legend-text">
                         These markers have blog posts associated with them.
                     </div>
                 </div>
@@ -43,7 +43,7 @@ export default class Legend extends React.Component {
                     <div className="col-sm-1">
                         <img src={blueDot} />
                     </div>
-                    <div className="col-sm-11">
+                    <div className="col-sm-11 legend-text">
                         These markers do not have blog posts associated with them.
                     </div>
                 </div>
