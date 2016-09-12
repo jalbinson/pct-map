@@ -44,15 +44,9 @@ export default class SimpleMap extends React.Component {
 
     render() {
         return (
-            <section style={{height: "100%"}}>
+            <section style={{height: "100vh"}}>
                 <GoogleMapLoader
-                    containerElement={
-                        <div
-                            style={{
-                                height: "100%",
-                            }}
-                        />
-                    }
+                    containerElement={ <div style={{height: "100%"}} /> }
                     googleMapElement={
                         <GoogleMap defaultZoom={5} defaultCenter={this.state.center}>
                             {this.state.markers.map((marker, index) => {
@@ -68,10 +62,7 @@ export default class SimpleMap extends React.Component {
                                     </Marker>
                                 )
                             })}
-
-                            <Polyline
-                                {...this.state.polyline}
-                            />
+                            <Polyline {...this.state.polyline} />
                         </GoogleMap>
                     }
                 />

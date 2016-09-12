@@ -4,7 +4,6 @@ import blueDot from '../../../images/blue-dot.png'
 
 export default class Legend extends React.Component {
 
-
     render() {
         return (
             <div className="legend-container">
@@ -47,7 +46,7 @@ export default class Legend extends React.Component {
                         No associated blog posts
                     </div>
                 </div>
-                <div className="footer">
+                <div className="author-footer">
                     <div className="footer-container">
                         Jamie Albinson - <a href="mailto:jcalbinson@gmail.com" target="_top">email</a> - <a href="https://github.com/jalbinson/pct-map" target="_blank">github</a>
                     </div>

@@ -16,12 +16,10 @@ class Main extends React.Component {
         return (
             <div className="row">
                 <div className="col-sm-8">
-                    <div style={{height: '100vh'}}>
-                        <SimpleMap
-                            markers={getMarkerConfig()}
-                            polyline={getPolylineConfig()}
-                        />
-                    </div>
+                    <SimpleMap
+                        markers={getMarkerConfig()}
+                        polyline={getPolylineConfig()}
+                    />
                 </div>
                 <div className="col-sm-4">
                     <Legend />
