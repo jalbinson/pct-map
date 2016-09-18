@@ -1,6 +1,7 @@
 import React from 'react';
 import redDot from '../../../images/red-dot.png';
-import blueDot from '../../../images/blue-dot.png'
+import blueDot from '../../../images/blue-dot.png';
+import yeehaw from '../../../images/yeehaw.jpg';
 
 export default class Legend extends React.Component {
 
@@ -44,6 +45,12 @@ export default class Legend extends React.Component {
                     </div>
                     <div className="col-sm-11 legend-text">
                         No associated blog posts
+                    </div>
+                </div>
+                <div className="row legend-row">
+                    <div className="col-sm-12">
+                        <img className="img-rounded center-block" src={yeehaw} style={{'width': '100%'}} />
+                        <div className="text-center" style={{'font-style': 'italic'}}>They did it!</div>
                     </div>
                 </div>
                 <div className="author-footer">
